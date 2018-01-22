@@ -1,0 +1,71 @@
+[user]
+	useConfigOnly = true
+	email = takasp.2350@gmail.com
+	name = takasp
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore
+	quotepath = false
+	pager = less -q -R
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
+[pager]
+	log = diff-highlight | less -RX
+	show = diff-highlight | less -RX
+	diff = diff-highlight | less -RX
+[alias]
+    # add
+    a = add
+
+    # branch
+    b = branch
+    ba = branch -a
+
+    # commit
+    c = commit
+    cm = commit -m
+    cam = commit -a -m
+    amend = commit --amend -C HEAD
+
+    # checkout
+    co = checkout
+    com = checkout master
+    cob = checkout -b
+
+    # cherry-pick
+    cp = cherry-pick
+
+    # log
+    l = log --date=short --pretty=format:'%C(yellow)%h %Cgreen%cd %Cblue%cn %Creset%s'
+    ll = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
+    lg = log --graph --date=short --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cd %Cblue%cn%Cred%d %Creset%s'
+    lm = log --merges --pretty=format:'%C(yellow)%h %Cgreen%ci %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
+
+    # pull
+    pl = pull
+
+    # push
+    ps = push
+
+    # status
+    s = status --short --branch
+    st = status
+
+    # fetch
+    ft = fetch
+
+    # remote
+    info = remote show origin
+
+    # show alias
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
