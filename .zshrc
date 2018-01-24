@@ -168,6 +168,8 @@ fpath=(/usr/local/share/zsh/site-functions(N-/) $fpath)
 autoload -Uz compinit
 compinit
 
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=$PATH:${JAVA_HOME}/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
