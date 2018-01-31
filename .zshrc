@@ -64,6 +64,10 @@ alias gft='git fetch'
 # Remote (ft)
 alias ginfo='git remote show origin'
 
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit
+compinit
+
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$PATH:${JAVA_HOME}/bin
 export GOPATH=$HOME/go
