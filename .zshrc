@@ -27,6 +27,9 @@ setopt hist_reduce_blanks # Delete extra space and save it in history
 # Git
 alias g='git'
 
+# Add (a)
+alias ga='git add'
+
 # Branch (b)
 alias gb='git branch'
 alias gba='git branch -a'
