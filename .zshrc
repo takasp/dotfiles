@@ -71,6 +71,9 @@ fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit
 compinit
 
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
+
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$PATH:${JAVA_HOME}/bin
 export GOPATH=$HOME/go
