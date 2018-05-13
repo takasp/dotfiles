@@ -79,3 +79,5 @@ export PATH=$PATH:${JAVA_HOME}/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
