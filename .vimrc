@@ -31,6 +31,10 @@ augroup fileTypeIndent
     autocmd BufNewFile,BufRead *.js setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
+augroup fileTypeFormat
+    autocmd BufRead,BufNewFile *Dockerfile* setf Dockerfile
+augroup END
+
 set wildmenu
 set history=5000
 set incsearch
