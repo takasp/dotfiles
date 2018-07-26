@@ -101,6 +101,9 @@ if dein#load_state('$HOME/.vim/bundle')
   " Go
   call dein#add('fatih/vim-go')
 
+  " NERDTree
+  call dein#add('scrooloose/nerdtree')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -154,6 +157,9 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " Move between ALE errors
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" Enable NERDTree
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 augroup Vimrc
   autocmd!
