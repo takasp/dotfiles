@@ -76,7 +76,7 @@ zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH=$PATH:${JAVA_HOME}/bin
-export GOPATH=$HOME/go
+export GOPATH=$HOME/dev
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export PATH="$HOME/.anyenv/bin:$PATH"
