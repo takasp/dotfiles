@@ -104,6 +104,9 @@ if dein#load_state('$HOME/.vim/bundle')
   " NERDTree
   call dein#add('scrooloose/nerdtree')
 
+  " elzr/vim-json
+  call dein#add('elzr/vim-json')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -200,3 +203,8 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+"----------------------------------------------------------
+" vim-json
+"----------------------------------------------------------
+let g:vim_json_syntax_conceal = 0
