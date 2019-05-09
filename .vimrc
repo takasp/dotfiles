@@ -23,6 +23,7 @@ set wildmode=list:longest
 set list listchars=tab:»-
 set expandtab
 set wrapscan
+set shortmess-=S " Search option
 
 augroup fileTypeIndent
     autocmd!
