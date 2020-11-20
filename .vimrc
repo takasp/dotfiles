@@ -129,9 +129,6 @@ endif
 
 " End dein Scripts-------------------------
 
-set background=dark
-colorscheme solarized
-
 "----------------------------------------------------------
 " status line config
 "----------------------------------------------------------
