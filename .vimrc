@@ -86,6 +86,10 @@ if dein#load_state('$HOME/.vim/bundle')
   " Indent visualization
   call dein#add('Yggdroot/indentLine')
 
+  " Status Line
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
   " Lint
   call dein#add('w0rp/ale')
 
@@ -136,31 +140,8 @@ set showmode
 set showcmd
 set ruler
 
-" ALE status customization
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
-let g:lightline = {
-  \'active': {
-  \  'left': [
-  \    ['mode', 'paste'],
-  \    ['readonly', 'filename', 'modified'],
-  \    ['ale'],
-  \  ]
-  \},
-  \'component_function': {
-  \  'ale': 'ALEStatus'
-  \}
-\ }
-
-function! ALEStatus()
-  return ALEGetStatusLine()
-endfunction
-
-" Change the format of ALE's message
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-
-" Move between ALE errors
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'powerlineish'
 
 " Enable NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
