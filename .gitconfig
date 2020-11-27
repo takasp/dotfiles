@@ -25,6 +25,8 @@
 	diff = diff-highlight | less -RX
 [ghq]
 	root = ~/dev/src
+[pull]
+	ff = only
 [alias]
     # add
     a = add
