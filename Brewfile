@@ -7,7 +7,6 @@ brew "awscli"
 brew "jq"
 brew "mas"
 
-
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "firefox"
@@ -23,3 +22,4 @@ cask "kindle"
 
 mas "LINE", id: 539883307
 mas "Twitter", id: 1482454543
+
