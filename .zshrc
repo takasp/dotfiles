@@ -6,8 +6,8 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ -s "${HOME}/dev/src/github.com/takasp/dotfiles/prezto/init.zsh" ]]; then
+  source "${HOME}/dev/src/github.com/takasp/dotfiles/prezto/init.zsh"
 fi
 
 # Customize to your needs...
