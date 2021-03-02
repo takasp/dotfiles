@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Install HomeBrew
+# Install Homebrew
 # https://brew.sh/
 #
 set -euC
