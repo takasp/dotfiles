@@ -1,3 +1,5 @@
+tap "homebrew/cask-versions"
+
 brew "git"
 brew "ghq"
 brew "peco"
