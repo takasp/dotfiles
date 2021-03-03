@@ -1,9 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Install Homebrew
 # https://brew.sh/
 #
-set -euC
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

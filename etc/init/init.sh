@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Initialize
 #
-set -euC
 
 ROOT_DIR=$(pwd)
 files=$(echo $ROOT_DIR/etc/setup/*.sh)

@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Setup MacOS configuration
 #
-set -euC
 
 # Tap to click
 defaults write -g com.apple.mouse.tapBehavior -int 1
