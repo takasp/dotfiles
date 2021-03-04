@@ -12,6 +12,10 @@ fi
 
 # Customize to your needs...
 
+# Source powerline
+.  $(pip3 show powerline-status | grep -E 'Location:' | cut -d ' ' -f 2)/powerline/bindings/zsh/powerline.zsh
+
+
 export LANG=ja_JP.UTF-8
 
 HISTSIZE=1000000
