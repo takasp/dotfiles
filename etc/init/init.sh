@@ -20,6 +20,7 @@ echo y | anyenv install --init
 mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 anyenv install nodenv
+anyenv install goenv
 
 # Remove group write permissions from the zsh directory
 # Respond to "zsh compinit: insecure directories, run compaudit for list." error messages
