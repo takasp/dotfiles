@@ -76,3 +76,5 @@
 
     # delete merged branches
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+[init]
+	defaultBranch = main
