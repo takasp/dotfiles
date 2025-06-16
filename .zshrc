@@ -5,10 +5,7 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Source Prezto.
-if [[ -s "${HOME}/dev/src/github.com/takasp/dotfiles/prezto/init.zsh" ]]; then
-  source "${HOME}/dev/src/github.com/takasp/dotfiles/prezto/init.zsh"
-fi
+eval "$(starship init zsh)"
 
 # Customize to your needs...
 

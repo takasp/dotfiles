@@ -2,6 +2,8 @@ tap "homebrew/cask-versions"
 
 brew "git"
 brew "ghq"
+brew "font-hack-nerd-font"
+brew "starship"
 brew "peco"
 brew "lua"
 brew "vim"
