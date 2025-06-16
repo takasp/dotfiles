@@ -21,9 +21,9 @@
 [mergetool]
 	prompt = false
 [pager]
-	log = diff-highlight | less -RX
-	show = diff-highlight | less -RX
-	diff = diff-highlight | less -RX
+	log = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -RX
+	show = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -RX
+	diff = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -RX
 [ghq]
 	root = ~/dev/src
 [pull]
