@@ -55,16 +55,21 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
+" Set Dein base path (required)
+let s:dein_base = '/Users/takasp/.cache/dein'
+
+" Set Dein source path (required)
+let s:dein_src = '/Users/takasp/.cache/dein/repos/github.com/Shougo/dein.vim'
+
+" Set Dein runtime path (required)
+execute 'set runtimepath+=' . s:dein_src
 
 " Required:
-if dein#load_state('$HOME/.cache/dein')
-  call dein#begin('$HOME/.cache/dein')
+if dein#load_state(s:dein_base)
+  " Call Dein initialization (required)
+  call dein#begin(s:dein_base)
 
-  " Let dein manage dein
-  " Required:
-  call dein#add('$HOME/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add(s:dein_src)
 
   " Automatic completion of code
   call dein#add('Shougo/neocomplete.vim')
