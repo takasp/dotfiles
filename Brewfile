@@ -8,7 +8,6 @@ brew "mise"
 brew "peco"
 brew "lua"
 brew "vim"
-brew "anyenv"
 brew "awscli"
 brew "jq"
 

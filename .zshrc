@@ -86,8 +86,6 @@ bindkey '^]' peco-src
 export GOPATH=$HOME/dev
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
 export PATH="$HOME/.yarn/bin:$PATH"
 setopt nonomatch
 
