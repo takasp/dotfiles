@@ -1,10 +1,10 @@
 format = """
-[](#1E3A8A)\
+[](#E0F2FE)\
 $os\
 $username\
-[](bg:#1E40AF fg:#1E3A8A)\
+[](bg:#7DD3FC fg:#1E293B fg:#1E3A8A)\
 $directory\
-[](fg:#1E40AF bg:#2563EB)\
+[](fg:#7DD3FC bg:#0EA5E9 fg:#FFFFFF)\
 $git_branch\
 $git_status\
 [ ](fg:#1E3A8A)\
@@ -17,19 +17,19 @@ $git_status\
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#1E3A8A"
-style_root = "bg:#1E3A8A"
+style_user = "bg:#E0F2FE fg:#1E293B"
+style_root = "bg:#E0F2FE fg:#1E293B"
 format = '[$user ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:#1E3A8A"
+style = "bg:#E0F2FE fg:#1E293B"
 disabled = true # Disabled by default
 
 [directory]
-style = "bg:#1E40AF"
+style = "bg:#7DD3FC fg:#1E293B"
 format = "[ $path ]($style)"
 truncation_length = 0
 truncate_to_repo = false
@@ -49,9 +49,9 @@ truncate_to_repo = false
 
 [git_branch]
 symbol = ""
-style = "bg:#2563EB"
+style = "bg:#0EA5E9 fg:#FFFFFF"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#2563EB"
+style = "bg:#0EA5E9 fg:#FFFFFF"
 format = '[$staged$modified$untracked$ahead_behind ]($style)'
