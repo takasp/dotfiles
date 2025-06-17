@@ -7,23 +7,6 @@ $directory\
 [](fg:#1E40AF bg:#2563EB)\
 $git_branch\
 $git_status\
-[](fg:#2563EB bg:#3B82F6)\
-$c\
-$elixir\
-$elm\
-$golang\
-$gradle\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
-$rust\
-$scala\
-[](fg:#3B82F6 bg:#60A5FA)\
-$docker_context\
-[](fg:#60A5FA bg:#1E3A8A)\
-$time\
 [ ](fg:#1E3A8A)\
 """
 
@@ -64,31 +47,6 @@ truncate_to_repo = false
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important 󰈙 " = " 󰈙 "
 
-[c]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[cpp]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[docker_context]
-symbol = " "
-style = "bg:#60A5FA"
-format = '[ $symbol $context ]($style)'
-
-[elixir]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[elm]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
 [git_branch]
 symbol = ""
 style = "bg:#2563EB"
@@ -96,54 +54,4 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style = "bg:#2563EB"
-format = '[$all_status$ahead_behind ]($style)'
-
-[golang]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[gradle]
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[haskell]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[java]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[julia]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[nim]
-symbol = "󰆥 "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[rust]
-symbol = ""
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[scala]
-symbol = " "
-style = "bg:#3B82F6"
-format = '[ $symbol ($version) ]($style)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#1E3A8A"
-format = '[ ♥ $time ]($style)'
+format = '[$staged$modified$untracked$ahead_behind ]($style)'
