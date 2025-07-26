@@ -64,6 +64,9 @@ alias gft='git fetch'
 # Remote (ft)
 alias ginfo='git remote show origin'
 
+# pnpm
+alias pn='pnpm'
+
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit
 compinit
